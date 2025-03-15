@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reform Services - AC Repair & Installation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Reform Services</div>
+        <nav id="main-nav">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Slideshow -->
+    <section id="home" class="slideshow">
+        <div class="slide active" style="background-image: url('/imgs/img1.jpeg')"></div>
+        <div class="slide" style="background-image: url('/imgs/img2.jpeg')"></div>
+        <div class="slide" style="background-image: url('/imgs/img3.jpeg')"></div>
+
+        <div class="slide-content">
+            <h2>Professional AC Services</h2>
+            <p>All Types of AC Services Available</p>
+            <a href="tel:+917204584680" class="call-btn">
+                <i class="fas fa-phone-alt"></i> Call Us Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Container -->
+    <div id="services" class="services-container">
+        <!-- Left Services Section -->
+        <div class="left-side-services-box">
+            <h3>Our Services</h3>
+            <div class="grid-container">
+                <button data-target="services-section">
+                    <img src="/imgs/ACservices.png" alt="Services">
+                    <span>Services</span>
+                </button>
+                <button data-target="repair-section">
+                    <img src="/imgs/gas-refill-repair.png" alt="Repair and Gas refill">
+                    <span>Repair & Gas</span>
+                </button>
+                <button data-target="installation-section">
+                    <img src="/imgs/installationAC.png" alt="Installation">
+                    <span>Installation</span>
+                </button>
+                <button data-target="uninstallation-section">
+                    <img src="/imgs/uninstallation.png" alt="Uninstallation">
+                    <span>Uninstallation</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Middle Services Section -->
+        <div class="middle-box">
+            <div id="services-section" class="service-section">
+                <h2>Services</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="/imgs/drycleaning.png" alt="Dry Cleaning">
+                        <h4>Dry Service</h4>
+                        <p>Thorough cleaning of indoor unit, including removal of dust from the mesh and cleaning with
+                            special cloth.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Dry Service', 1, 499)">
+                            Add to Cart - ₹499
+                        </button>
+                    </div>
+                    <div class="service-card">
+                        <img src="/imgs/jetspraywater.png" alt="Jet Spray Cleaning">
+                        <h4>Jet Spray Cleaning</h4>
+                        <p>Thorough cleaning of indoor unit with water jet spray gun for deep cleaning.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Jet Spray Cleaning', 1, 650)">
+                            Add to Cart - ₹650
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="repair-section" class="service-section">
+                <h2>Repair and Gas Refill</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="/imgs/repair.png" alt="AC Repair">
+                        <h4>AC Less/No Cooling Repair</h4>
+                        <p>Complete check-up to identify issues before repair.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('AC Less/No Cooling Repair', 1, 219)">
+                            Add to Cart - ₹219
+                        </button>
+                    </div>
+                    <div class="service-card">
+                        <img src="/imgs/electric_problem.png" alt="Power Issue">
+                        <h4>AC Power Issue Repair</h4>
+                        <p>Complete check-up to identify issues before repair.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('AC Power Issue Repair', 1, 219)">
+                            Add to Cart - ₹219
+                        </button>
+                    </div>
+                    <div class="service-card">
+                        <img src="/imgs/Ac smell-noise.png" alt="Noise Repair">
+                        <h4>AC Noise/Smell Repair</h4>
+                        <p>Complete check-up to identify issues before repair.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('AC Noise/Smell Repair', 1, 219)">
+                            Add to Cart - ₹219
+                        </button>
+                    </div>
+                    <div class="service-card">
+                        <img src="/imgs/waterleak.png" alt="Water Leakage">
+                        <h4>AC Water Leakage Repair</h4>
+                        <p>Complete check-up to identify issues before repair.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('AC Water Leakage Repair', 1, 219)">
+                            Add to Cart - ₹219
+                        </button>
+                    </div>
+                    <div class="service-card">
+                        <img src="/imgs/gas-refill-repair.png" alt="Gas Refill">
+                        <h4>AC Gas Leak Repair and Refill</h4>
+                        <p>Complete check-up to identify issues before repair.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('AC Gas Leak Repair and Refill', 1, 219)">
+                            Add to Cart - ₹219
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="installation-section" class="service-section">
+                <h2>Installation</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="/imgs/split-AC.png" alt="Split AC Installation">
+                        <h4>Split AC Installation</h4>
+                        <p>Professional installation of split air conditioners with proper mounting and connections.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Split AC Installation', 1, 2000)">
+                            Add to Cart - ₹2000
+                        </button>
+                    </div>
+                    <div class="service-card">
+                        <img src="/imgs/window-ac.png" alt="Window AC Installation">
+                        <h4>Window AC Installation</h4>
+                        <p>Professional installation of window air conditioners with secure fitting.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Window AC Installation', 1, 2000)">
+                            Add to Cart - ₹2000
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="uninstallation-section" class="service-section">
+                <h2>Uninstallation</h2>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <img src="/imgs/uninstallation.png" alt="Split AC Uninstallation">
+                        <h4>Split AC Uninstallation</h4>
+                        <p>Safe and proper removal of split air conditioners.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Split AC Uninstallation', 1, 900)">
+                            Add to Cart - ₹900
+                        </button>
+                    </div>
+                    <div class="service-card">
+                        <img src="/imgs/uninstallingwindowac.png" alt="Window AC Uninstallation">
+                        <h4>Window AC Uninstallation</h4>
+                        <p>Safe and proper removal of window air conditioners.</p>
+                        <button class="add-to-cart-btn" onclick="addToCart('Window AC Uninstallation', 1, 900)">
+                            Add to Cart - ₹900
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart-right">
+            <h3>Your Cart</h3>
+            <div id="cart-items-list"></div>
+            <div id="cart-total" class="cart-total">Total: ₹0</div>
+            <div class="cart-buttons">
+                <button id="whatsapp-button" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Place Order
+                </button>
+                <button onclick="clearCart()" class="clear-cart-btn">
+                    Clear Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Cart Button -->
+    <div class="mobile-cart-button" id="mobile-cart-button">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count-badge" id="mobile-cart-count">0</span>
+    </div>
+
+    <!-- Mobile Cart Panel -->
+    <div class="mobile-cart-panel" id="mobile-cart-panel">
+        <div class="mobile-cart-header">
+            <div class="mobile-cart-title">Your Cart</div>
+            <div class="mobile-cart-close" id="mobile-cart-close">&times;</div>
+        </div>
+        <div class="mobile-cart-content">
+            <div class="mobile-cart-items" id="mobile-cart-items"></div>
+            <div class="mobile-cart-total" id="mobile-cart-total">Total: ₹0</div>
+            <div class="mobile-cart-buttons">
+                <button id="mobile-whatsapp-button" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Place Order
+                </button>
+                <button onclick="clearCart()" class="clear-cart-btn">
+                    Clear Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- WhatsApp Form -->
+    <div id="whatsapp-form" class="whatsapp-form">
+        <div class="close-form"><span id="close-btn">&times;</span></div>
+        <h2>Send to WhatsApp</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="services">Services:</label>
+            <textarea id="services" name="services" readonly></textarea>
+
+            <button id="send-whatsapp-btn" type="button">Send to WhatsApp</button>
+        </form>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Added to Cart Message -->
+    <div id="added-to-cart-message" class="added-to-cart-message">
+        <span>Added to cart!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="social-media-links">
+                <h3>Follow us on social media:</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/reform002?mibextid=ZbWKwL" target="_blank"><i
+                                class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/reform002" target="_blank"><i class="fab fa-instagram"></i>
+                            Instagram</a></li>
+                </ul>
+            </div>
+            <div class="copyright-info">
+                <p>&copy; 2025 Reform Services. All rights reserved.</p>
+            </div>
+            <div class="credits">
+                <p>Icons were downloaded from Flaticon</p>
+                <p><a href="https://www.flaticon.com/free-icons/air-conditioning" title="air conditioning icons">Air
+                        conditioning icons created by Leremy - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/repair" title="repair icons">Repair icons created by
+                        surang - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/installation" title="installation icons">Installation
+                        icons created by bsd - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/split-ac" title="split ac icons">Split ac icons created
+                        by ranksol graphics - Flaticon</a></p>
+                <p><a href="https://www.flaticon.com/free-icons/box" title="box icons">Box icons created by Freepik -
+                        Flaticon</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
